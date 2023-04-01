@@ -1,0 +1,14 @@
+// -----> importing helper files
+@import "0-helper/color";
+// -----> importing base files
+@import "1-base/base";
+// -----> importing layout files
+@import "2-layout/popup";
+@import "2-layout/topBar";
+@import "2-layout/container";
+@import "2-layout/taskContainer";
+@import "2-layout/footer";
+// -----> importing component
+@import "3-component/typography";
+@import "3-component/themeSwitch";
+@import "3-component/inputContainer";

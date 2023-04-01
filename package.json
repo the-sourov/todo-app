@@ -1,0 +1,13 @@
+{
+  "name": "todo-app",
+  "version": "1.0.0",
+  "description": "This is a simple To-Do app 🔥.",
+  "scripts": {
+    "compile:scss": "sass --watch scss/main.scss ./public/css/style.css"
+  },
+  "author": "Sourov Biswas",
+  "license": "ISC",
+  "dependencies": {
+    "sass": "^1.45.0"
+  }
+}

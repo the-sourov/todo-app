@@ -1,0 +1,53 @@
+// -----> input container code
+.inputContainer {
+    align-items: center;
+    display: flex;
+    margin-bottom: 2.5rem;
+
+    &__inputField {
+        background-color: var(--tertiary_color);
+        border: none;
+        border-radius: 1rem;
+        box-shadow: 0 1rem 2rem rgba(51, 51, 51, .85);
+        color: var(--primary_text);
+        font-family: inherit;
+        height: 6rem;
+        padding-left: 1.5rem;
+        position: relative;
+        width: 100%;
+        z-index: 9;
+
+        &:focus {
+            outline: none;
+        }
+        &::-webkit-input-placeholder {
+            color: var(--secondary_text);
+            font-weight: 500;
+            letter-spacing: 2px;
+        }
+    }
+
+    &__btn {
+        background-color: var(--color_green);
+        border: none;
+        border-radius: .6rem;
+        color: var(--color_white);
+        cursor: pointer;
+        height: 3rem;
+        letter-spacing: 2px;
+        margin-left: -10.5rem;
+        padding: .5rem 1rem;
+        position: relative;
+        transition: all .4s;
+        z-index: 10;
+
+        &:hover {
+            transform: scale(1.1);
+            box-shadow: 0 .5rem 1rem rgba(51, 51, 51, .85);
+        }
+        &:active {
+            transform: scale(1);
+            box-shadow: none;
+        }
+    }
+}

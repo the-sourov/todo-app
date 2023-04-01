@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html theme="light">
+  <head>
+    <title>To-Do</title>
+
+    <!-- ----- stylesheet location ----- -->
+    <link rel="stylesheet" href="./public/css/style.css" />
+
+    <!-- ----- meta data ----- -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+
+  <body>
+    <!-- ----- popup, this popup will appear if the input field is empty and user click on add task button ----- -->
+    <div class="popup">
+      <div class="popup__container">
+        <svg class="popup__closeIcon">
+          <use href="./public/images/spriteSvg.svg#icon-cross"></use>
+        </svg>
+
+        <div class="popup__contentContainer">
+          <svg class="popup__emojiIcon">
+            <use href="./public/images/spriteSvg.svg#icon-emoji-sad"></use>
+          </svg>
+
+          <p class="popup__caption">input field is empty</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="topBar">
+      <h1 class="headingPrimary">todo</h1>
+
+      <!-- ----- this is the theme changing switch ----- -->
+      <div class="themeSwitch">
+        <!-- the svg image -->
+        <svg class="themeSwitch__icon">
+          <use href="./public/images/spriteSvg.svg#icon-sun"></use>
+        </svg>
+
+        <p class="themeSwitch__caption">light</p>
+      </div>
+    </div>
+
+    <!-- ----- this container holds the input field and task panel ----- -->
+    <div class="container">
+      <div class="inputContainer">
+        <input
+          class="inputContainer__inputField"
+          type="text"
+          placeholder="Add text in your todo list"
+        />
+        <button class="inputContainer__btn">Add Task</button>
+      </div>
+
+      <ul class="taskContainer">
+        <div class="taskContainer__noTask">
+          <svg class="taskContainer__emoji">
+            <use href="./public/images/spriteSvg.svg#icon-emoji-sad"></use>
+          </svg>
+          <p class="taskContainer__noTaskNode">
+            looks like you have empty list
+          </p>
+        </div>
+      </ul>
+    </div>
+    <!-- taskContainer__icon -->
+
+    <!-- ----- footer ----- -->
+    <footer class="footer">
+      <p class="footer__node">
+        <span class="footer__node--positionFirst">made with</span>
+        <svg class="footer__node--icon">
+          <use href="./public/images/spriteSvg.svg#icon-heart"></use>
+        </svg>
+        <span class="footer__node--positionLast">by sourov</span>
+      </p>
+    </footer>
+
+    <!-- ----- script file location ----- -->
+    <script src="./public/script/app.js"></script>
+  </body>
+</html>

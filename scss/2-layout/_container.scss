@@ -1,0 +1,9 @@
+// -----> the main container code
+.container {
+    display: flex;
+    flex-direction: column;
+    height: 60%;
+    max-width: 50rem;
+    margin: 0 auto;
+    margin-bottom: 2.5rem;
+}

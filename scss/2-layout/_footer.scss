@@ -1,0 +1,32 @@
+// -----> entire footer code
+.footer {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+
+    // -----> footer node code
+    &__node {
+        align-items: center;
+        display: flex;
+
+        // -----> giving the element right margin but not the last one
+        & > *:not(:last-child) {
+            margin-right: .8rem;
+        }
+
+        &--positionFirst,
+        &--positionLast {
+            color: var(--primary_text);
+            font-size: 1.6rem;
+            font-weight: 400;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+        }
+
+        &--icon {
+            fill: var(--color_orange);
+            height: 2rem;
+            width: 2rem;
+        }
+    }
+}

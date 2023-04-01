@@ -1,0 +1,45 @@
+// -----> theme changing switch
+.themeSwitch {
+  align-items: center;
+  background-image: linear-gradient(
+    to right,
+    var(--secondary_dark),
+    var(--secondary_light)
+  );
+  border: 2px solid var(--color_white);
+  border-radius: 3rem;
+  cursor: pointer;
+  display: flex;
+  padding: 1rem 1.5rem;
+
+  // -----> theme switch icon code
+  &__icon {
+    fill: var(--color_yellow);
+    height: 3rem;
+    margin-right: 1.5rem;
+    transition: order 0.4s, margin-right 0.4s;
+    width: 3rem;
+  }
+  // -----> theme switch icon color base on theme
+  &__icon.themeSwitch__icon--dark {
+    fill: var(--color_white);
+    margin-right: 0;
+    order: 1;
+  }
+
+  // -----> theme switch caption code
+  &__caption {
+    color: var(--primary_dark);
+    font-size: 2.5rem;
+    font-weight: 500;
+    letter-spacing: 0.5rem;
+    text-transform: uppercase;
+    transition: order 0.4s, margin-right 0.4s;
+  }
+  // -----> theme switch caption color base on theme
+  &__caption.themeSwitch__caption--dark {
+    color: var(--color_white);
+    margin-right: 1.5rem;
+    order: 0;
+  }
+}
